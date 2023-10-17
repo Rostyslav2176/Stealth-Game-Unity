@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     private float moveSpeed;
     public float walkSpeed;
-    public float sprintSpeed;
+    public float sprintSpeed = 100f;
     public float slideSpeed;
 
     private float desiredMoveSpeed;
@@ -132,19 +132,21 @@ public class PlayerMovement : MonoBehaviour
                 desiredMoveSpeed = slideSpeed;
 
             else
-                desiredMoveSpeed = sprintSpeed;
+                desiredMoveSpeed = walkSpeed;
         }
 
-        else if(Input.GetKey(crouchKey))
+        if(Input.GetKey(crouchKey))
         {
             state = MovementState.crouching;
             desiredMoveSpeed = crouchSpeed;
         }
 
-        else if (grounded && Input.GetKey(sprintKey))
+        if (grounded && Input.GetKey(sprintKey))
         {
+            
             state = MovementState.sprinting;
             desiredMoveSpeed = sprintSpeed;
+            Debug.Log(moveSpeed + " is current speed");
         }
 
         else if (grounded) 
@@ -162,6 +164,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(Mathf.Abs(desiredMoveSpeed - lastDesiredMoveSpeed) > 4f && moveSpeed != 0)
         {
+            Debug.Log("move speed is " + moveSpeed);
             StopAllCoroutines();
             StartCoroutine(SmoothlyLerpMoveSpeed());
         }
@@ -169,6 +172,7 @@ public class PlayerMovement : MonoBehaviour
         {
             moveSpeed = desiredMoveSpeed;
         }
+
         lastDesiredMoveSpeed = desiredMoveSpeed;
     }
 
@@ -185,6 +189,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         moveSpeed = desiredMoveSpeed;
+        Debug.Log("Move speed is " + moveSpeed + " And desired speed is: " + desiredMoveSpeed);
     }
 
     private void MovePlayer()
