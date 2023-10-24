@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractorSource: {fileID: 650701697}
-  InteractRange: 5
+  InteractRange: 10
 --- !u!1 &371119347
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +455,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88488da0817d7664e8adf2ea5685ecb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  render: {fileID: 371119350}
+  cooldown: 10
 --- !u!65 &371119349
 BoxCollider:
   m_ObjectHideFlags: 0
