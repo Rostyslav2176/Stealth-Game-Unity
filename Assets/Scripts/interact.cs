@@ -1,30 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks;
 
 public class interact : MonoBehaviour, IInteractable
 {
     Renderer ren;
-    public Renderer render;
-    public float cooldown;
-    float activeTime;
+    public float coolDown = 1;
+    public float coolDownTimer;
 
+
+    void Update()
+    {
+        if(coolDownTimer > 0) 
+        {
+            coolDownTimer -= Time.deltaTime;
+        }
+
+        if(coolDownTimer < 0) 
+        {
+            coolDownTimer = 0;
+        }
+
+       
+    }
     public void Interact()
     {
-        ren = GetComponent<Renderer>();
-        ren.material.color = Color.red;
-
-    }
-
-  
-    public void Update()
-    {
-        if (Time.time - activeTime < cooldown)
+        if (Input.GetKeyDown(KeyCode.E) && coolDownTimer == 0)
         {
-            render.material.color = Color.green;            
-            return;
+            ren = GetComponent<Renderer>();
+            ren.material.SetColor("_Color", Color.red);
         }
-        activeTime = Time.time;
+        else
+        {
+            Debug.Log("Green");
+        }
+        
+
     }
-   
+
 }
