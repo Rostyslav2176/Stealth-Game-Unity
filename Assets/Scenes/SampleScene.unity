@@ -2531,9 +2531,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 371119354}
-  soundRange: 25
+  soundRange: 50
   soundType: 1
-  coolDown: 0
+  coolDown: 5
   coolDownTimer: 0
 --- !u!1 &390525144
 GameObject:
@@ -4083,9 +4083,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 657969894}
-  soundRange: 25
+  soundRange: 50
   soundType: 1
-  coolDown: 0
+  coolDown: 5
   coolDownTimer: 0
 --- !u!1 &680038547
 GameObject:
@@ -5577,6 +5577,7 @@ GameObject:
   - component: {fileID: 987244407}
   - component: {fileID: 987244408}
   - component: {fileID: 987244409}
+  - component: {fileID: 987244410}
   m_Layer: 0
   m_Name: Agent 1
   m_TagString: Untagged
@@ -5782,6 +5783,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAtm: {fileID: 650701702}
   enemyAtm: {fileID: 987244408}
+--- !u!114 &987244410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987244399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9be8a74a5d5444e88959cc505a4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 987244401}
+  displacementFromDanger: 10
 --- !u!1 &989233988
 GameObject:
   m_ObjectHideFlags: 0
@@ -6250,6 +6265,7 @@ GameObject:
   - component: {fileID: 1138687665}
   - component: {fileID: 1138687672}
   - component: {fileID: 1138687673}
+  - component: {fileID: 1138687674}
   m_Layer: 0
   m_Name: Agent 3
   m_TagString: Untagged
@@ -6455,6 +6471,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAtm: {fileID: 650701702}
   enemyAtm: {fileID: 1138687672}
+--- !u!114 &1138687674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138687664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9be8a74a5d5444e88959cc505a4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1138687666}
+  displacementFromDanger: 10
 --- !u!1 &1212042909
 GameObject:
   m_ObjectHideFlags: 0
@@ -8224,6 +8254,7 @@ GameObject:
   - component: {fileID: 1690420620}
   - component: {fileID: 1690420627}
   - component: {fileID: 1690420628}
+  - component: {fileID: 1690420629}
   m_Layer: 0
   m_Name: Agent 2
   m_TagString: Untagged
@@ -8429,6 +8460,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAtm: {fileID: 0}
   enemyAtm: {fileID: 650701702}
+--- !u!114 &1690420629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690420619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9be8a74a5d5444e88959cc505a4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1690420621}
+  displacementFromDanger: 10
 --- !u!1 &1733804001
 GameObject:
   m_ObjectHideFlags: 0
@@ -8870,9 +8915,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 1801043248}
-  soundRange: 25
+  soundRange: 50
   soundType: 1
-  coolDown: 0
+  coolDown: 5
   coolDownTimer: 0
 --- !u!1 &1830018749
 GameObject:
