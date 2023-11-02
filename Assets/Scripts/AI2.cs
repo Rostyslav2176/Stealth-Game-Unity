@@ -30,6 +30,7 @@ public class AIController : MonoBehaviour
     bool m_playerInRange;                           //  If the player is in range of vision, state of chasing
     bool m_PlayerNear;                              //  If the player is near, state of hearing
     bool m_IsPatrol;                                //  If the enemy is patrol, state of patroling
+    bool m_IsChasing;
     bool m_CaughtPlayer;                            //  if the enemy has caught the player
 
     void Start()
@@ -187,6 +188,7 @@ public class AIController : MonoBehaviour
             }
         }
     }
+
 
     void EnviromentView()
     {

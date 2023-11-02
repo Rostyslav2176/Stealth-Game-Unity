@@ -3,44 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
 
-public class interact : MonoBehaviour, IInteractable
-{
-    Renderer ren;
-    public float coolDown;
-    public float coolDownTimer = 0f;
-
-
-    void Update()
+    public class interact : MonoBehaviour, IInteractable
     {
-        if(coolDownTimer > 0) 
-        {
-            coolDownTimer -= Time.deltaTime;
-        }
+        Renderer ren;
+        public float coolDown;
+        public float coolDownTimer = 0f;
 
-        if(coolDownTimer < 0) 
-        {
-            coolDownTimer = 0;
-        }
-        if (Input.GetKeyDown(KeyCode.E) && coolDownTimer == 0)
-        {
-            Interact();
-            coolDownTimer = coolDown;
-        }
 
-            if(coolDownTimer == 0)
+        void Update()
         {
-            ren = GetComponent<Renderer>();
-            ren.material.SetColor("_Color", Color.green);
-            coolDownTimer = coolDown;
-        }
+            if (coolDownTimer > 0)
+            {
+                coolDownTimer -= Time.deltaTime;
+            }
 
-    }
-    public void Interact()
-    {               
+            if (coolDownTimer < 0)
+            {
+                coolDownTimer = 0;
+            }
+            if (Input.GetMouseButtonDown(0) && coolDownTimer == 0)
+            {
+                Interact();
+                coolDownTimer = coolDown;
+            }
+
+            if (coolDownTimer == 0)
+            {
+                ren = GetComponent<Renderer>();
+                ren.material.SetColor("_Color", Color.green);
+                coolDownTimer = coolDown;
+            }
+
+        }
+        public void Interact()
+        {
             ren = GetComponent<Renderer>();
             ren.material.SetColor("_Color", Color.red);
-            Debug.Log("active");              
-        
-    }
+            Debug.Log("active");
 
-}
+        }
+
+
+
+    }

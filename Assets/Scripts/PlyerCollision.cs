@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class PlyerCollision : MonoBehaviour
 {
-    public void GameOver()
+   private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Game Over");
     }
