@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GamePlay;
 using UnityEngine.AI;
 public class AIController : MonoBehaviour
 {
@@ -53,7 +54,7 @@ public class AIController : MonoBehaviour
 
     private void Update()
     {
-            EnviromentView();                       //  Check whether or not the player is in the enemy's field of vision
+        EnviromentView();                       //  Check whether or not the player is in the enemy's field of vision
 
         if (!m_IsPatrol)
         {
@@ -63,6 +64,16 @@ public class AIController : MonoBehaviour
         {
             Patroling();
         }
+
+        if (!m_IsPatrol && !m_IsChasing)
+        {
+            
+        }
+        else
+        {
+            Patroling();
+        }
+       
     }
 
     private void Chasing()
@@ -188,6 +199,7 @@ public class AIController : MonoBehaviour
             }
         }
     }
+
 
 
     void EnviromentView()
