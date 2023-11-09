@@ -6,17 +6,11 @@ using UnityEngine.SceneManagement;
 public class AtributesManager : MonoBehaviour
 {
     public float health;
-    public float attack;
-    bool inStealth;
+    public float attack;   
 
     public void TakeDamage(float amount)
     {
         health -= amount;
-        if (health <= 0)
-        {
-            Debug.Log("Game Over");
-            Restart();
-        }
     }
      
     public void DealDamage(GameObject target)
@@ -28,8 +22,5 @@ public class AtributesManager : MonoBehaviour
         }
     }
 
-    void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+
 }

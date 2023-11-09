@@ -65,14 +65,6 @@ public class AIController : MonoBehaviour
             Patroling();
         }
 
-        if (!m_IsPatrol && !m_IsChasing)
-        {
-            
-        }
-        else
-        {
-            Patroling();
-        }
        
     }
 
