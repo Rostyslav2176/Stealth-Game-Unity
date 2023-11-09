@@ -18,10 +18,6 @@ public class AtributesManager : MonoBehaviour
             Restart();
         }
     }
-    public void StealthKillOn()
-    {
-        inStealth = false;
-    }
      
     public void DealDamage(GameObject target)
     {
