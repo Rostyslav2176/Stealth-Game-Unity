@@ -10,7 +10,7 @@ using System.Threading.Tasks;
         public float coolDownTimer = 0f;
 
 
-        void Update()
+    void Update()
         {
             if (coolDownTimer > 0)
             {
@@ -36,13 +36,11 @@ using System.Threading.Tasks;
 
         }
         public void Interact()
-        {
+        {    
+
             ren = GetComponent<Renderer>();
             ren.material.SetColor("_Color", Color.red);
             Debug.Log("active");
 
         }
-
-
-
     }

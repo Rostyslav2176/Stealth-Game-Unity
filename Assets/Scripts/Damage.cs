@@ -9,14 +9,7 @@ public class Damage : MonoBehaviour
     public AtributesManager enemyAtm;
 
 	void OnCollisionEnter(Collision playerAtm)
-	{
-		enemyAtm.DealDamage(playerAtm.gameObject);
-		Debug.Log("Game Over");
-		Restart();
-	}	
-
-	void Restart()
-	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-	}
+	{		
+		enemyAtm.DealDamage(playerAtm.gameObject);		
+	}		
 }

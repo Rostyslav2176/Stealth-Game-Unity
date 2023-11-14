@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GamePlay;
 using UnityEngine.AI;
 public class AIController : MonoBehaviour
 {
