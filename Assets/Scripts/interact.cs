@@ -8,7 +8,8 @@ using System.Threading.Tasks;
         Renderer ren;
         public float coolDown;
         public float coolDownTimer = 0f;
-
+        public AudioSource src;
+        public AudioClip sfx;
 
     void Update()
         {
@@ -24,6 +25,7 @@ using System.Threading.Tasks;
             if (Input.GetMouseButtonDown(0) && coolDownTimer == 0)
             {
                 Interact();
+                SoundP();
                 coolDownTimer = coolDown;
             }
 
@@ -34,6 +36,13 @@ using System.Threading.Tasks;
                 coolDownTimer = coolDown;
             }
 
+        }
+
+        public void SoundP()
+        {
+            src.clip = sfx;
+            src.Play();
+            Debug.Log("sound");
         }
         public void Interact()
         {    
