@@ -43,7 +43,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float maxSlopeAngle;
     private RaycastHit slopeHit;
     private bool exitingSlope;
-    
+
 
     public Transform orientation;
 
@@ -70,6 +70,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+
 
         readyToJump = true;
 
@@ -288,4 +289,5 @@ public class PlayerMovementAdvanced : MonoBehaviour
     {
         return Vector3.ProjectOnPlane(direction, slopeHit.normal).normalized;
     }
+
 }

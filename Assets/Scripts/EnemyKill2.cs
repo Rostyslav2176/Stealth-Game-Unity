@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemykill : MonoBehaviour
+public class Enemykill2 : MonoBehaviour
 {
     public Transform enemy;
     public bool inKillRange = false;
@@ -22,12 +22,12 @@ public class Enemykill : MonoBehaviour
         if (distanceToEnemy <= detectionRange)
         {
             inKillRange = true;
-            
+
         }
 
-        if(Input.GetKeyDown(KeyCode.E) && inKillRange == true)
+        if (Input.GetKeyDown(KeyCode.E) && inKillRange == true)
         {
-            Destroy(GameObject.FindGameObjectWithTag("Agent"));
+            Destroy(GameObject.FindGameObjectWithTag("Agent2"));
             enemiesLeft.RemoveEnemy();
         }
     }
