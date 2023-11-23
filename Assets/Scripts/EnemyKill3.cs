@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemykill3 : MonoBehaviour
 {
     public Transform enemy;
-    public bool inKillRange = false;
+    public bool inKillRange3 = false;
     public float detectionRange;
     EnemiesLeft enemiesLeft;
 
@@ -21,14 +21,14 @@ public class Enemykill3 : MonoBehaviour
 
         if (distanceToEnemy <= detectionRange)
         {
-            inKillRange = true;
+            inKillRange3 = true;
 
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && inKillRange == true)
+        if (Input.GetKeyDown(KeyCode.E) && inKillRange3 == true)
         {
-            Destroy(GameObject.FindGameObjectWithTag("Agent3"));
-            
+            GameObject.FindGameObjectWithTag("Agent3").SetActive(false);
+
             enemiesLeft.RemoveEnemy();
         }
     }

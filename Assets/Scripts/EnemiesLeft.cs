@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class EnemiesLeft : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class EnemiesLeft : MonoBehaviour
     void Update()
     {
         ShowEnemies();
+        if(kills >= 3)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
     public void ShowEnemies()

@@ -4008,7 +4008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8ed470dfc3b7c84c90a84236ec03a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1138687671}
+  enemy: {fileID: 987244406}
   inKillRange: 0
   detectionRange: 3
 --- !u!114 &650701704
@@ -4023,8 +4023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b87ee8a969a2194f828f8c7a99ae2b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 987244406}
-  inKillRange: 0
+  enemy: {fileID: 1138687671}
+  inKillRange3: 0
   detectionRange: 3
 --- !u!114 &650701705
 MonoBehaviour:
@@ -4039,7 +4039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1690420626}
-  inKillRange: 0
+  inKillRange2: 0
   detectionRange: 3
 --- !u!1 &652644757
 GameObject:
@@ -6130,7 +6130,7 @@ GameObject:
   - component: {fileID: 987244411}
   m_Layer: 0
   m_Name: Agent 1
-  m_TagString: Agent3
+  m_TagString: Agent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7176,7 +7176,7 @@ GameObject:
   - component: {fileID: 1138687673}
   m_Layer: 0
   m_Name: Agent 3
-  m_TagString: Agent
+  m_TagString: Agent3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7345,7 +7345,7 @@ Transform:
   m_GameObject: {fileID: 1138687664}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 108.42203, y: 5.652521, z: -7.4121685}
+  m_LocalPosition: {x: 108.42203, y: 5.652521, z: -7.4121704}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8039,8 +8039,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 987244406}
-  - {fileID: 1690420626}
   - {fileID: 1138687671}
+  - {fileID: 1690420626}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1377286992
@@ -9565,7 +9565,7 @@ Transform:
   m_GameObject: {fileID: 1690420619}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.985523, y: 5.652521, z: -0.3121662}
+  m_LocalPosition: {x: 16.985523, y: 5.652521, z: -0.3121643}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

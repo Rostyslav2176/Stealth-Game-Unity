@@ -27,7 +27,8 @@ public class Enemykill : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.E) && inKillRange == true)
         {
-            Destroy(GameObject.FindGameObjectWithTag("Agent"));
+            GameObject.FindGameObjectWithTag("Agent").SetActive(false);
+
             enemiesLeft.RemoveEnemy();
         }
     }
