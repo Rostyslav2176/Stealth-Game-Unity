@@ -24,6 +24,7 @@ public class Interaction : MonoBehaviour
                 {
                     interactObj.Interact();
                     interactObj.SoundP();
+                    Debug.Log("working");
                 }
             }
         }

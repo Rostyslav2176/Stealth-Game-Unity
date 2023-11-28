@@ -17,6 +17,10 @@ public class Enemykill3 : MonoBehaviour
 
     public void Update()
     {
+        EnemiesKill3();
+    }
+    void EnemiesKill3()
+    {
         float distanceToEnemy = Vector3.Distance(transform.position, enemy.position);
 
         if (distanceToEnemy <= detectionRange)

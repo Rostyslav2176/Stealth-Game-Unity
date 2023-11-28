@@ -46,7 +46,6 @@ using System.Threading.Tasks;
         }
         public void Interact()
         {    
-
             ren = GetComponent<Renderer>();
             ren.material.SetColor("_Color", Color.red);
             Debug.Log("active");

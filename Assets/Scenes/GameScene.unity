@@ -2695,7 +2695,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b522c4e7b12a8c74295012afb240d166, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4140,7 +4140,7 @@ Transform:
   m_GameObject: {fileID: 652644757}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.883, z: 0}
+  m_LocalPosition: {x: 0.2, y: -0.883, z: -5.4}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4262,13 +4262,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657969887}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.92716914, z: -0, w: 0.3746431}
-  m_LocalPosition: {x: 36.67469, y: 6.785693, z: 37.027122}
+  m_LocalRotation: {x: -0, y: 0.99921006, z: -0, w: 0.039740164}
+  m_LocalPosition: {x: 36.828, y: 6.785693, z: 31.76}
   m_LocalScale: {x: 0.5, y: 1.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 910052211}
-  m_LocalEulerAnglesHint: {x: 0, y: 135.996, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 175.445, z: 0}
 --- !u!82 &657969893
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4279,7 +4279,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b522c4e7b12a8c74295012afb240d166, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6463,7 +6463,7 @@ Transform:
   m_GameObject: {fileID: 1007546736}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0.417}
+  m_LocalPosition: {x: -0.344, y: 0.643, z: 0.417}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10152,7 +10152,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b522c4e7b12a8c74295012afb240d166, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

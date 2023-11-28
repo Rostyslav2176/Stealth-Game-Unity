@@ -17,15 +17,19 @@ public class Enemykill : MonoBehaviour
 
     public void Update()
     {
+        EnemiesKill();
+    }
+    void EnemiesKill()
+    {
         float distanceToEnemy = Vector3.Distance(transform.position, enemy.position);
 
         if (distanceToEnemy <= detectionRange)
         {
             inKillRange = true;
-            
+
         }
 
-        if(Input.GetKeyDown(KeyCode.E) && inKillRange == true)
+        if (Input.GetKeyDown(KeyCode.E) && inKillRange == true)
         {
             GameObject.FindGameObjectWithTag("Agent").SetActive(false);
 
