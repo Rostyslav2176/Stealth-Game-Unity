@@ -16,7 +16,7 @@ public class EnemiesLeft : MonoBehaviour
         ShowEnemies();
         if(kills >= 3)
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("Game Over");
         }
     }
 
