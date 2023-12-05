@@ -4002,7 +4002,7 @@ MonoBehaviour:
   interactaction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1690420619}
+      - m_Target: {fileID: 1690420620}
         m_TargetAssemblyTypeName: AIController, Assembly-CSharp
         m_MethodName: CheckObject
         m_Mode: 1
@@ -8340,8 +8340,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 987244406}
-  - {fileID: 1138687671}
   - {fileID: 1690420626}
+  - {fileID: 1138687671}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1377286992
