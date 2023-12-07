@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
     [Header("Timer Settings")]
     public float currentTime;
     public bool countDown;
+    
 
     [Header("Format Settings")]
     public bool hasFormat;

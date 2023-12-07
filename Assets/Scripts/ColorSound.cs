@@ -41,5 +41,8 @@ public class ColorSound : MonoBehaviour
         src.Play();
         ren = GetComponent<Renderer>();
         ren.material.SetColor("_Color", Color.red);
+        Debug.Log("working");
     }
+
+    
 }

@@ -18,8 +18,7 @@ public class AIController : MonoBehaviour
     public int edgeIterations = 4;                  //  Number of iterations to get a better performance of the mesh filter when the raycast hit an obstacule
     public float edgeDistance = 0.5f;               //  Max distance to calcule the a minumun and a maximum raycast when hits something
 
-    public Transform objectt;
-
+    public ColorSound colorsound;
 
     public Transform[] waypoints;                   //  All the waypoints where the enemy patrols
     int m_CurrentWaypointIndex;                     //  Current waypoint where the enemy is going to
@@ -199,17 +198,7 @@ public class AIController : MonoBehaviour
 
     public void CheckObject()
     {
-        if(Input.GetKeyDown(KeyCode.F))
-        {
-            Debug.Log("working");
-            m_IsPatrol = false;
-            Vector3 dirToObject = (objectt.position - transform.position).normalized;
-
-        }
-        else
-        {
-            Patroling();
-        }
+        
     }
 
 

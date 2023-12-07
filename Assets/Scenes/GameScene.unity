@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4454971, g: 0.49516755, b: 0.5740877, a: 1}
+  m_IndirectSpecularColor: {r: 0.43789446, g: 0.48583066, b: 0.5661078, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: d6bdf46856191a04584b7e27eb717b43, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 0e61fdb952831964d8f969de6bfcaa52, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 2099783cdf1691d4fb952245269a11c1, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -2652,8 +2652,8 @@ Transform:
   m_LocalScale: {x: 0.5, y: 1.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1827567516}
   - {fileID: 625406679}
+  - {fileID: 1827567516}
   m_Father: {fileID: 910052211}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &371119353
@@ -3496,7 +3496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
-  interactKey: 101
+  interactKey: 102
   interactaction:
     m_PersistentCalls:
       m_Calls:
@@ -3958,7 +3958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625406678}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3999,12 +3999,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
+  interactKey: 101
   interactaction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1690420620}
-        m_TargetAssemblyTypeName: AIController, Assembly-CSharp
-        m_MethodName: CheckObject
+      - m_Target: {fileID: 371119354}
+        m_TargetAssemblyTypeName: ColorSound, Assembly-CSharp
+        m_MethodName: Change
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4355,8 +4356,8 @@ Transform:
   m_LocalScale: {x: 0.5, y: 1.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2113515134}
   - {fileID: 1878122343}
+  - {fileID: 2113515134}
   m_Father: {fileID: 910052211}
   m_LocalEulerAnglesHint: {x: 0, y: 346.64, z: 0}
 --- !u!82 &657969893
@@ -6408,7 +6409,7 @@ MonoBehaviour:
   meshResolution: 1
   edgeIterations: 4
   edgeDistance: 1
-  objectt: {fileID: 1801043246}
+  colorsound: {fileID: 0}
   waypoints:
   - {fileID: 1830018750}
   - {fileID: 2017126661}
@@ -7199,7 +7200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122289448}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7240,12 +7241,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
+  interactKey: 101
   interactaction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 987244407}
-        m_TargetAssemblyTypeName: AIController, Assembly-CSharp
-        m_MethodName: CheckObject
+      - m_Target: {fileID: 1801043248}
+        m_TargetAssemblyTypeName: ColorSound, Assembly-CSharp
+        m_MethodName: Check
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7413,7 +7415,7 @@ MonoBehaviour:
   meshResolution: 1
   edgeIterations: 4
   edgeDistance: 1
-  objectt: {fileID: 657969892}
+  colorsound: {fileID: 0}
   waypoints:
   - {fileID: 986760573}
   - {fileID: 426268626}
@@ -7664,7 +7666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
-  interactKey: 102
+  interactKey: 101
   interactaction:
     m_PersistentCalls:
       m_Calls:
@@ -9245,7 +9247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
-  interactKey: 101
+  interactKey: 102
   interactaction:
     m_PersistentCalls:
       m_Calls:
@@ -9328,7 +9330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
-  interactKey: 101
+  interactKey: 102
   interactaction:
     m_PersistentCalls:
       m_Calls:
@@ -9897,7 +9899,7 @@ MonoBehaviour:
   meshResolution: 1
   edgeIterations: 4
   edgeDistance: 1
-  objectt: {fileID: 1801043246}
+  colorsound: {fileID: 0}
   waypoints:
   - {fileID: 191046285}
   - {fileID: 1985290612}
@@ -10606,8 +10608,8 @@ Transform:
   m_LocalScale: {x: 0.5, y: 1.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1200768727}
   - {fileID: 1122289449}
+  - {fileID: 1200768727}
   m_Father: {fileID: 910052211}
   m_LocalEulerAnglesHint: {x: 0, y: 43.154, z: 0}
 --- !u!82 &1801043247
@@ -10789,7 +10791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
-  interactKey: 102
+  interactKey: 101
   interactaction:
     m_PersistentCalls:
       m_Calls:
@@ -11072,7 +11074,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878122342}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11113,12 +11115,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
+  interactKey: 101
   interactaction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1138687665}
-        m_TargetAssemblyTypeName: AIController, Assembly-CSharp
-        m_MethodName: CheckObject
+      - m_Target: {fileID: 657969894}
+        m_TargetAssemblyTypeName: ColorSound, Assembly-CSharp
+        m_MethodName: Check
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12455,7 +12458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
-  interactKey: 102
+  interactKey: 101
   interactaction:
     m_PersistentCalls:
       m_Calls:

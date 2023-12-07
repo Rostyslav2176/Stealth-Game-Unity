@@ -6,13 +6,17 @@ using UnityEngine.Events;
 public class SoundInteraction2 : MonoBehaviour
 {
     public bool isInRange;
+    public KeyCode interactKey;
     public UnityEvent interactaction;
 
     void Update()
     {
         if (isInRange)
         {
-            interactaction.Invoke();
+            if (Input.GetKeyDown(interactKey))
+            {
+                interactaction.Invoke();
+            }
         }
     }
 
@@ -32,3 +36,5 @@ public class SoundInteraction2 : MonoBehaviour
         }
     }
 }
+
+
