@@ -28,7 +28,7 @@ public class SoundInteraction : MonoBehaviour
         }
     }
 
-    private void OntriggerExit(Collider collision)
+    private void OnTriggerExit(Collider collision)
     {
         if (collision.gameObject.CompareTag("Agent"))
         {
