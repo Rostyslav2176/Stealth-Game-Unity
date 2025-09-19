@@ -16,7 +16,7 @@ F - Stealth Takedown;
 
 ## How to run the application:
 ### Github Installation
-  1. Make sure you have Unity 5 installed or are comfortable with version upgrading.
+  1. Make sure you have Unity 2022.3.11f installed or are comfortable with version upgrading.
   2. Download Zip.
   3. Extract file to desired location
   4. Open extracted folder in Unity
