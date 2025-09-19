@@ -15,7 +15,7 @@ E - Interact;
 F - Stealth Takedown;
 
 ## How to run the application:
-###Github Installation
+### Github Installation
   1. Make sure you have Unity 5 installed or are comfortable with version upgrading.
   2. Download Zip.
   3. Extract file to desired location
